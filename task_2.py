@@ -1,6 +1,6 @@
 search_word = input('Введите слов для поиска: ')
 
-file = open('text.txt', 'r', encoding = 'utf-8')
+file = open('resource/text.txt', 'r', encoding ='utf-8')
 lines = file.readlines()
 file.close()
 
@@ -32,7 +32,7 @@ else:
     print('Количество вхождений: 0')
     print('Строки: []')
 
-result_file = open('search_results.txt', 'w', encoding='utf-8')
+result_file = open('resource/search_results.txt', 'w', encoding='utf-8')
 result_file.write('Искомое слово: ' + search_word + '\n')
 result_file.write('Найдено: ' + ('да' if total_count > 0 else 'нет') + '\n')
 result_file.write('Количество вхождений: ' + str(total_count) + '\n')

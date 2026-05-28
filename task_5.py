@@ -1,4 +1,4 @@
-file = open('words.txt', 'r', encoding='utf-8')
+file = open('resource/words.txt', 'r', encoding='utf-8')
 lines = file.readlines()
 file.close()
 # Пропуск пустот
@@ -19,17 +19,17 @@ reverse_alphabetical = sorted(words, reverse=True)
 
 
 # Запись результатов
-file_out = open('sorted_alphabetically.txt', 'w', encoding='utf-8')
+file_out = open('resource/sorted_alphabetically.txt', 'w', encoding='utf-8')
 for word in alphabetical:
     file_out.write(word + '\n')
 file_out.close()
 
-file_out = open('sorted_by_length.txt', 'w', encoding='utf-8')
+file_out = open('resource/sorted_by_length.txt', 'w', encoding='utf-8')
 for word in by_length:
     file_out.write(word + '\n')
 file_out.close()
 
-file_out = open('sorted_reverse.txt', 'w', encoding='utf-8')
+file_out = open('resource/sorted_reverse.txt', 'w', encoding='utf-8')
 for word in reverse_alphabetical:
     file_out.write(word + '\n')
 file_out.close()

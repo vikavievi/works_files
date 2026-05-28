@@ -34,19 +34,19 @@ def decrypt(text):
     return result
 
 # Исходный
-file = open('secret.txt', 'r', encoding='utf-8')
+file = open('resource/secret.txt', 'r', encoding='utf-8')
 original = file.read()
 file.close()
 
 # Зашифрованный
 encrypted = encrypt(original)
-file_out = open('encrypted.txt', 'w', encoding='utf-8')
+file_out = open('resource/encrypted.txt', 'w', encoding='utf-8')
 file_out.write(encrypted)
 file_out.close()
 
 # Расшифрованный
 decrypted = decrypt(encrypted)
-file_out = open('decrypted.txt', 'w', encoding='utf-8')
+file_out = open('resource/decrypted.txt', 'w', encoding='utf-8')
 file_out.write(decrypted)
 file_out.close()
 
